@@ -17,10 +17,10 @@ define([
         userChanges: function () {
             this.valueChangedByUser = true;
 
-            var customurl = 'https://training.junior.com/course/document/ajax';
+            var customUrl = 'https://training.junior.com/course/document/ajax';
             var val = $('input[name="product[document]"]').val();
             $.ajax({
-                url: customurl,
+                url: customUrl,
                 type: 'POST',
                 dataType: 'json',
                 data: {
