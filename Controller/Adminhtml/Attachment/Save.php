@@ -53,9 +53,9 @@ class Save extends Action
                 $id = $this->getRequest()->getParam('entity_id')?:null;
                 $customModel = $this->attachmentFactory->create()->load($id);
                 if($data['attachment_type'] == 'file'){
-                    $data['icon'] = $this->getViewFileUrl("Magenest_CourseType::icons-file.png");
+                    $data['icon'] = 'https://training.junior.com/media/attachment/images/icons-file.png';
                 } if($data['attachment_type'] == 'image') {
-                    $data['icon'] = $this->getViewFileUrl("Magenest_CourseType::icons-image.png");
+                    $data['icon'] = 'https://training.junior.com/media/attachment/images/icons-image.png';
                 }
                 $data['customer_group'] = json_encode($data['customer_group']);
                 $data['mine_type'] = $data['file_path'][0]['type'];
